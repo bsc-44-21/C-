@@ -11,7 +11,7 @@ int main()
     //Generating numbers less between 0 and 11;
     int days_until_expiration = rand() % 12;
 
-//using if statement to satisfy our conditions to provide the relevant information
+//using if statement to satisfy our conditions
 
     if(days_until_expiration <= 0)
     {

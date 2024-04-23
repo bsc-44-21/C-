@@ -10,7 +10,7 @@ int main()
     srand( static_cast <unsigned int> (time(0)));
 
     int days_until_expiration = rand() % 12;
-
+//Using switch cases to satisfy some conditions
     switch (days_until_expiration) {
         case 0: //when the random number generated is 0
             cout << "Your subscription has expired!." << endl;
