@@ -69,22 +69,22 @@ int main() {
                 cout << "Your entry was invalid!\n " << endl;
         }
 
-        cout << "---" << endl;//Marking the end of a computation
+        cout << "---" << endl;//Marking the end of a computation;
     }
 
     return 0;
 }
-//function to calculate area of triangle
+//function to calculate area of triangle;
 double polygons::Triangle(double Base, double Height) {
     return 0.5 * Base * Height;
 }
 
-//function to calculate area of Rectangle
+//function to calculate area of Rectangle;
 double polygons::Rectangle(double width, double height) {
     return width * height;
 }
 
-//function to calculate area of Square
+//function to calculate area of Square;
 double polygons::Square(double side) {
     return side * side;
 }
