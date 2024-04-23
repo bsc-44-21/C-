@@ -26,9 +26,10 @@ int main() {
 
         int choice;
         cin >> choice;
-
+//Using switch statements to match the user inpiut with the option number for 
+//poper direction 
         switch (choice) {
-            case 1: {
+            case 1: {//calculates the area of a triangle
                 double base, height;
                 cout << "Please provide the base of the triangle: ";
                 cin >> base;
@@ -39,7 +40,7 @@ int main() {
                 cout << "The area for your request is: " << area << endl;
                 break;
             }
-            case 2: {
+            case 2: {//Calculatyes the area of the Rectangle 
                 double width, height;
                 cout << "Please provide the width of the rectangle: ";
                 cin >> width;
@@ -50,7 +51,7 @@ int main() {
                 cout << "The area for your request is: " << area << endl;
                 break;
             }
-            case 3: {
+            case 3: {//Calculates the area of the Square
                 double side;
                 cout << "Please provide the side length of the square: ";
                 cin >> side;
@@ -59,7 +60,7 @@ int main() {
                 cout << "The area for your request is: " << area << endl;
                 break;
             }
-            case 4: {//this will exits the program
+            case 4: {//To exits the program
                 cout << "Thank you for using the program!\n " << endl;
                 quit = true;
                 break;
@@ -68,20 +69,22 @@ int main() {
                 cout << "Your entry was invalid!\n " << endl;
         }
 
-        cout << "------------------------" << endl;//Marking the end of a computation
+        cout << "---" << endl;//Marking the end of a computation
     }
 
     return 0;
 }
-
+//function to calculate area of triangle
 double polygons::Triangle(double Base, double Height) {
     return 0.5 * Base * Height;
 }
 
+//function to calculate area of Rectangle
 double polygons::Rectangle(double width, double height) {
     return width * height;
 }
 
+//function to calculate area of Square
 double polygons::Square(double side) {
     return side * side;
 }
