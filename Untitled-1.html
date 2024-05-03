@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media Query Example</title>
+<style>
+  /* Default styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Media query for screens with a maximum width of 600px */
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: #ccc;
+    }
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+  /* Media query for screens with a minimum width of 601px and a maximum width of 1200px */
+  @media only screen and (min-width: 601px) and (max-width: 1200px) {
+    body {
+      background-color: #999;
+    }
+    h1 {
+      font-size: 36px;
+    }
+  }
+
+  /* Media query for screens with a minimum width of 1201px */
+  @media only screen and (min-width: 1201px) {
+    body {
+      background-color: #666;
+    }
+    h1 {
+      font-size: 48px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>Responsive Design Example</h1>
+<p>This text will change color based on screen size.</p>
+
+</body>
+</html>
