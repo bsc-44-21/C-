@@ -1,5 +1,4 @@
-#ifndef RECTANGLE_H //directive stands for if not defined
-#define RECTANGLE_H //directive defines the macro (usually the name of the header file) if it hasn’t been defined already
+#pragma once
 
 class Rectangle {
 private:
@@ -24,9 +23,7 @@ public:
 
     // Member function to calculate area
     double calculateArea() const;
-    ~Rectangle(){
+    ~Rectangle() {
         // Destructor to clean up here
-                }
-        };
-
-#endif // directive marks the end of the conditional block
+    }
+};
